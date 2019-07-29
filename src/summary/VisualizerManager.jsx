@@ -375,19 +375,16 @@ export default class VisualizerManager {
     _longitudinalViewIcon = (isSelected) => {
         const strokeColor = isSelected ? "#3F3F3F" : "#CCCCCC";
         return (
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g id="Page-1" stroke="none" strokeWidth=".5" fill="none" fillRule="evenodd">
-                    <g id="Group-39" stroke={strokeColor} strokeWidth=".75">
-                        <rect x="10" y="1" width="5" height="3" fill={strokeColor} />
-                        <rect y="14.5" width="16" height="0.3" fill={strokeColor} />
-                        <rect width="1.25" height="15" transform="matrix(1 0 0 -1 0 15)" fill={strokeColor} />
-                        <rect x="10" y="5.5" width="5" height="3" fill={strokeColor} />
-                        <rect x="10" y="10" width="5" height="3" fill={strokeColor} />
-                        <rect x="3" y="1" width="5" height="3" fill={strokeColor} />
-                        <rect x="3" y="5.5" width="5" height="3" fill={strokeColor} />
-                        <rect x="3" y="10" width="5" height="3" fill={strokeColor} />
-                    </g>
-                </g>
+            <svg width="16px" height="15px" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="3" y="13" width="10" height="1.5" fill={strokeColor}/>
+                <rect y="8" width="4" height="1.5" fill={strokeColor}/>
+                <rect y="4" width="4" height="1.5" fill={strokeColor}/>
+                <rect width="4" height="1.5" fill={strokeColor}/>
+                <rect x="5" y="8" width="11" height="1.5" fill={strokeColor}/>
+                <rect x="5" y="4" width="11" height="1.5" fill={strokeColor}/>
+                <rect x="5" width="11" height="1.5" fill={strokeColor}/>
+                <path d="M3 11.5L0 14.5H3V11.5Z" fill={strokeColor}/>
+                <path d="M13 11.5L16 14.5H13V11.5Z" fill={strokeColor}/>
             </svg>
         );
     }
